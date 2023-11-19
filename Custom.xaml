@@ -26,10 +26,10 @@
                     Text="选择你想要的点一点" />
 
  <local:MyListItem  Margin="-5,2,-5,8"
-		            Logo="http://mtw.so/5F9aNK" Title="新Wiki入口" Info="点我打开新Wiki" 
+		            Logo="http://mtw.so/69e6it" Title="新Wiki入口" Info="点我打开新Wiki" 
 		            EventType="打开网页" EventData="https://zh.minecraft.wiki/w/Minecraft_Wiki" Type="Clickable" />
  <local:MyListItem  Margin="-5,2,-5,8"
-		            Logo="http://mtw.so/5F9aNK" Title="查看原文" Info="点我打开以下文本原文" 
+		            Logo="http://mtw.so/69e6it" Title="查看原文" Info="点我打开以下文本原文" 
 		            EventType="打开网页" EventData="https://zh.minecraft.wiki/w/Minecraft_Wiki:%E8%BF%81%E7%A7%BB%E9%80%9A%E7%9F%A5" Type="Clickable" />
 
 <Image Height="200" HorizontalAlignment="Center" Source="https://zh.minecraft.wiki/images/Forking_from_Fandom_poster.png?68357" />
@@ -107,7 +107,7 @@
 闪电是雷暴天气的标志性特征之一，会在雷暴天气持续期间随机落下。
 
 图为雷暴中一道闪电束击中了树。" />
-<Image Height="250" HorizontalAlignment="Center" Source="http://mtw.so/6vMGX2" />
+<Image Height="250" HorizontalAlignment="Center" Source="https://cdn.jsdelivr.net/gh/llsgllsg/PCL-@main/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-11-18%20204651.png" />
   <TextBlock TextWrapping="Wrap" Margin="0,0,0,10" Foreground="#000000" FontSize="15"
                     Text="     " />
  <local:MyListItem  Margin="-5,2,-5,8"
@@ -181,7 +181,7 @@
 
 
  <local:MyListItem  Margin="-5,2,-5,8"
-		            Logo="http://mtw.so/5F9aNK" Title="打开MC Wiki" Info="Wiki一下，你就知道！" 
+		            Logo="http://mtw.so/69e6it" Title="打开MC Wiki" Info="Wiki一下，你就知道！" 
 		            EventType="打开网页" EventData="https://zh.minecraft.wiki/w/Minecraft_Wiki" Type="Clickable" />
          
         <TextBlock TextWrapping="Wrap" Margin="0,10,0,10"
