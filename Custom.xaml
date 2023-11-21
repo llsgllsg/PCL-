@@ -96,25 +96,22 @@
 <local:MyCard Title="Wiki本周页面" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
     <StackPanel Margin="25,40,23,15">
         <TextBlock TextWrapping="Wrap" Margin="0,0,0,10" Foreground="#000000" FontSize="15"
-                    Text="雷暴是一种较为稀有的、危险的天气状况，在主世界随机生成。
+                    Text="
+荧石是在下界生成的发光方块。
 
-降雨或降雪天气加重时，有小概率变为雷暴天气。雷暴中具体的降水形式视生物群系温度和海拔高度而定。
+荧石会以荧石堆的形式自然生成在下界的下界岩下方。流浪商人或老手级别的牧师村民也会出售荧石。
 
-雷暴天气发生时，玩家可以使用床，即使是在白天。使用床睡觉可以跳过雷暴，也会重置游戏内的雷暴计时器，使得起床之后一般不会出现雷暴天气。
+没有被具有精准采集的工具挖掘破坏时，荧石被破坏后会掉落2-4个荧石粉，被具有精准采集的工具挖掘破坏后会掉落自身。
 
-与雨雪天气相似，雷暴时天空会变暗，云会从白色变为较深的灰色，太阳、月亮和星星会隐去。雷暴会使整个世界的天空光照降低，正午的光照会减至10。虽然太阳在雨中不可见，黎明和黄昏时地平线上的曙光和暮光仍然可见。
+荧石会发出亮度为15级的光，是游戏里光照等级最高的光。荧石还可用于为重生锚充能。生物无法生成在荧石上。
 
-与普通的大雨和大雪不同，雷暴时敌对生物的生成系统认为天空光照被削弱10级，使得这些生物可以在一天中的任何时间生成。
-
-闪电是雷暴天气的标志性特征之一，会在雷暴天气持续期间随机落下。
-
-图为雷暴中一道闪电束击中了树。" />
-<Image Height="250" HorizontalAlignment="Center" Source="https://cdn.jsdelivr.net/gh/llsgllsg/PCL-@main/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-11-18%20204651.png" />
+图为下界中自然生成的荧石堆。" />
+<Image Height="250" HorizontalAlignment="Center" Source="https://zh.minecraft.wiki/images/GlowstoneInNether.png?b34ec" />
   <TextBlock TextWrapping="Wrap" Margin="0,0,0,10" Foreground="#000000" FontSize="15"
                     Text="     " />
  <local:MyListItem  Margin="-5,2,-5,8"
-		            Logo="http://mtw.so/5F9aNK" Title="打开雷暴介绍页面" Info="点我打开" 
-		            EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%9B%B7%E6%9A%B4" Type="Clickable" />
+		            Logo="http://mtw.so/5F9aNK" Title="打开荧石介绍页面" Info="点我打开" 
+		            EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8D%A7%E7%9F%B3" Type="Clickable" />
 
 
 
