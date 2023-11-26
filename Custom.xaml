@@ -26,10 +26,10 @@
                     Text="选择你想要的点一点" />
 
  <local:MyListItem  Margin="-5,2,-5,8"
-		            Logo="http://mtw.so/69e6it" Title="新Wiki入口" Info="点我打开新Wiki" 
+		            Logo="https://zh.minecraft.wiki/favicon.ico" Title="新Wiki入口" Info="点我打开新Wiki" 
 		            EventType="打开网页" EventData="https://zh.minecraft.wiki/w/Minecraft_Wiki" Type="Clickable" />
  <local:MyListItem  Margin="-5,2,-5,8"
-		            Logo="http://mtw.so/69e6it" Title="查看原文" Info="点我打开以下文本原文" 
+		            Logo="https://zh.minecraft.wiki/favicon.ico" Title="查看原文" Info="点我打开以下文本原文" 
 		            EventType="打开网页" EventData="https://zh.minecraft.wiki/w/Minecraft_Wiki:%E8%BF%81%E7%A7%BB%E9%80%9A%E7%9F%A5" Type="Clickable" />
 
 <Image Height="200" HorizontalAlignment="Center" Source="https://zh.minecraft.wiki/images/Forking_from_Fandom_poster.png?68357" />
@@ -112,7 +112,7 @@
   <TextBlock TextWrapping="Wrap" Margin="0,0,0,10" Foreground="#000000" FontSize="15"
                     Text="     " />
  <local:MyListItem  Margin="-5,2,-5,8"
-		            Logo="http://mtw.so/5F9aNK" Title="打开荧石介绍页面" Info="点我打开" 
+		            Logo="https://zh.minecraft.wiki/favicon.ico" Title="打开荧石介绍页面" Info="点我打开" 
 		            EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8D%A7%E7%9F%B3" Type="Clickable" />
 
 
@@ -182,7 +182,7 @@
 
 
  <local:MyListItem  Margin="-5,2,-5,8"
-		            Logo="http://mtw.so/69e6it" Title="打开MC Wiki" Info="Wiki一下，你就知道！" 
+		            Logo="https://zh.minecraft.wiki/favicon.ico" Title="打开MC Wiki" Info="Wiki一下，你就知道！" 
 		            EventType="打开网页" EventData="https://zh.minecraft.wiki/w/Minecraft_Wiki" Type="Clickable" />
          
         <TextBlock TextWrapping="Wrap" Margin="0,10,0,10"
