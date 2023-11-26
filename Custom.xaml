@@ -119,7 +119,21 @@
 
     </StackPanel>
 </local:MyCard>
-
+<local:MyCard Margin="0,0,0,12" Title="下崽器" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="24,40,24,15">
+        <local:MyHint Margin="0,0,0,10" IsWarn="True" Text="链接必须为直链——https或者http开头，部分网址可能无法下载，如百度网盘" />
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="3*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <TextBlock Margin="0,7,0,0" Text="下载链接：" Grid.Column="0" FontSize="13"/>
+            <local:MyTextBox Margin="-5,0,0,0" Name="web" Height="30" Grid.Column="1"/>
+            <local:MyButton EventType="下载文件" EventData="{Binding ElementName=web,Path=Text}" Text="开始下载" Margin="5,0,0,0" Height="30" Grid.Column="2" Padding="2,0,2,0" ColorType="Highlight"/>
+        </Grid>
+    </StackPanel>  
+</local:MyCard>
 
 <local:MyCard Title="启动 H ! Y ! P ! I ! X ! E ! L !" Margin="0,0,0,15" CanSwap="true" IsSwaped="true">
     <StackPanel Margin="30,40,23,15">
@@ -191,7 +205,20 @@
                     Text="点我—康康MC官网有啥好康的—点我" EventType="打开网页" EventData="https://minecraft.net/" />
     </StackPanel>
 </local:MyCard>
+<local:MyCard Margin="0,0,0,12" Title="杂项" CanSwap="True" IsSwaped="True">
+     <StackPanel Margin="24,40,24,15">
+          <Grid>
+               <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+               </Grid.ColumnDefinitions>
+               <local:MyButton Grid.Column="0" Margin="0,0,10,0" Height="35" Text="今日人品" EventType="今日人品"/>
 
+               <local:MyButton Grid.Column="1" Margin="0,0,0,0" Text="启动Minecraft基岩版" EventType="打开网页" EventData="minecraft://" ToolTip="如果你的电脑上安装了Minecraft基岩版，按下这个按钮将会启动它。这样PCL2就赶上官启了！" />
+
+          </Grid>
+     </StackPanel>
+</local:MyCard>
 
 <local:MyCard Title="有灵感？打开一点系统工具" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
     <StackPanel Margin="25,40,23,15">
