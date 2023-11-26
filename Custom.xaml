@@ -191,7 +191,7 @@
 
 
  <local:MyListItem  Margin="-5,2,-5,8"
-		            Logo="https://www.mcmod.cn/static/public/images/logo.png?v=4" Title="打开MC百科" Info="MC百科一下，你就知道！" 
+		            Logo="https://www.mcmod.cn/images/logo.gif" Title="打开MC百科" Info="MC百科一下，你就知道！" 
 		            EventType="打开网页" EventData="https://www.mcmod.cn/" Type="Clickable" />
 
 
