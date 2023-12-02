@@ -82,6 +82,10 @@
                     Text="         " />	    
 <local:MyButton Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
                     Text="请看" EventType="弹出窗口" EventData="必看|如果图片出现错误请汇报作者，邮箱：llsgllsg@outlook\n来打扰的一律拉黑" />
+
+ <local:MyListItem  Margin="-5,2,-5,8"
+		            Logo="https://zh.minecraft.wiki/favicon.ico" Title="打开预设里的新闻主页" Info="点我打开" 
+		            EventType="打开帮助" EventData="https://news.bugjump.net/News.json" Type="Clickable" />
           <Calendar HorizontalAlignment="Center" Margin="0,12,0,10" Grid.Column="0"/>
           <TextBlock Margin="5,0,5,12" TextWrapping="Wrap" HorizontalAlignment="Center" Foreground="{DynamicResource ColorBrush1}" Text="{cave}" />
           <local:MyButton Margin="0,-10,-5,0" Width="15" Height="15" HorizontalAlignment="Right" ToolTip="点击我刷新哦" EventType="刷新主页" EventData="回声洞">
@@ -99,21 +103,27 @@
     <StackPanel Margin="25,40,23,15">
         <TextBlock TextWrapping="Wrap" Margin="0,0,0,10" Foreground="#000000" FontSize="15"
                     Text="
-荧石是在下界生成的发光方块。
+降雨是一种会在主世界中随机出现的天气。
 
-荧石会以荧石堆的形式自然生成在下界的下界岩下方。流浪商人或老手级别的牧师村民也会出售荧石。
+平均每场降雨持续0.5 - 1个Minecraft日，两场降雨间隔0.5 - 7.5个游戏日。降雨有一定概率变为雷暴。
 
-没有被具有精准采集的工具挖掘破坏时，荧石被破坏后会掉落2-4个荧石粉，被具有精准采集的工具挖掘破坏后会掉落自身。
+在部分生物群系的特定高度以上，降雨会变为降雪。温暖的生物群系、虚空生物群系和其他维度中永远不会下雨。
 
-荧石会发出亮度为15级的光，是游戏里光照等级最高的光。荧石还可用于为重生锚充能。生物无法生成在荧石上。
+降雨时天空会变暗，云会从白色变为灰色，太阳、月亮和星星会隐去。降雨会导致太阳的天空光照降低3，但月亮的天空光照等级仍为4。虽然太阳在雨中不可见，黎明和黄昏时地平线上的曙光和暮光仍然可见。
 
-图为下界中自然生成的荧石堆。" />
-<Image Height="250" HorizontalAlignment="Center" Source="https://zh.minecraft.wiki/images/GlowstoneInNether.png?b34ec" />
+雨水会扑灭火和着火的实体，但不能扑灭下界岩等特定方块上的火。末影人、雪傀儡等生物会因为接触雨水而受到伤害。
+
+降雨还具有缩短钓鱼的上钩等待时间、使露天的炼药锅缓慢地装满水、使附有激流魔咒的三叉戟可以在陆地上使用等效果。
+
+降雨粒子碰到一个方块时会发出声音，这种声音在16格内的任何地方都能够被听见。虽然降雨粒子只能在10格内被看见，它的效果却发生在所有已加载的区域里。
+
+图为降雨。" />
+<Image Height="250" HorizontalAlignment="Center" Source="https://zh.minecraft.wiki/images/Rain.png?a682e" />
   <TextBlock TextWrapping="Wrap" Margin="0,0,0,10" Foreground="#000000" FontSize="15"
                     Text="     " />
  <local:MyListItem  Margin="-5,2,-5,8"
-		            Logo="https://zh.minecraft.wiki/favicon.ico" Title="打开荧石介绍页面" Info="点我打开" 
-		            EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8D%A7%E7%9F%B3" Type="Clickable" />
+		            Logo="https://zh.minecraft.wiki/favicon.ico" Title="打开降雨介绍页面" Info="点我打开" 
+		            EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%99%8D%E9%9B%A8" Type="Clickable" />
 
 
 
