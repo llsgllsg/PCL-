@@ -83,9 +83,9 @@
 <local:MyButton Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
                     Text="请看" EventType="弹出窗口" EventData="必看|如果图片出现错误请汇报作者，邮箱：llsgllsg@outlook\n来打扰的一律拉黑" />
 
- <local:MyListItem  Margin="-5,2,-5,8"
-		            Logo="https://zh.minecraft.wiki/favicon.ico" Title="打开预设里的新闻主页" Info="点我打开" 
-		            EventType="打开帮助" EventData="https://news.bugjump.net/News.json" Type="Clickable" />
+<local:MyListItem Margin="-5,2,-5,8"
+                    Logo="pack://application:,,,/images/Blocks/Grass.png"
+		            EventType="打开帮助" EventData="帮助/自定义帮助.json" Type="Clickable" />
           <Calendar HorizontalAlignment="Center" Margin="0,12,0,10" Grid.Column="0"/>
           <TextBlock Margin="5,0,5,12" TextWrapping="Wrap" HorizontalAlignment="Center" Foreground="{DynamicResource ColorBrush1}" Text="{cave}" />
           <local:MyButton Margin="0,-10,-5,0" Width="15" Height="15" HorizontalAlignment="Right" ToolTip="点击我刷新哦" EventType="刷新主页" EventData="回声洞">
@@ -103,27 +103,21 @@
     <StackPanel Margin="25,40,23,15">
         <TextBlock TextWrapping="Wrap" Margin="0,0,0,10" Foreground="#000000" FontSize="15"
                     Text="
-降雨是一种会在主世界中随机出现的天气。
+黏液块是一种允许部分实体在其上弹跳的透明方块。
 
-平均每场降雨持续0.5 - 1个Minecraft日，两场降雨间隔0.5 - 7.5个游戏日。降雨有一定概率变为雷暴。
+黏液块能使掉落在其上的部分实体弹跳，上升的最大高度与该个体的速度相关。除非玩家正在潜行，否则落在黏液块上不会造成摔落伤害。如果玩家落在黏液块上面时按住跳跃键，无论速度大小，接触黏液块后仅会进行一次普通的跳跃。
 
-在部分生物群系的特定高度以上，降雨会变为降雪。温暖的生物群系、虚空生物群系和其他维度中永远不会下雨。
+当被活塞推动时，被黏液块触碰到的实体（物品展示框[仅Java版]、末影龙和画除外）会向着被推动的方向弹射出去。如果实体是位于移动的黏液块之上的话，则会落入或穿过它，除非它正被向上推。
 
-降雨时天空会变暗，云会从白色变为灰色，太阳、月亮和星星会隐去。降雨会导致太阳的天空光照降低3，但月亮的天空光照等级仍为4。虽然太阳在雨中不可见，黎明和黄昏时地平线上的曙光和暮光仍然可见。
+当黏液块被活塞推动或拉动时，它会尝试带着所有相邻的方块朝自身移动的方向移动。可以被它移动的方块种类与能被黏性活塞拉回的方块相同，无法被拉回的方块会留在原位。被移动的方块也会尝试移动相邻的方块，而不单是在活塞前面的方块。
 
-雨水会扑灭火和着火的实体，但不能扑灭下界岩等特定方块上的火。末影人、雪傀儡等生物会因为接触雨水而受到伤害。
-
-降雨还具有缩短钓鱼的上钩等待时间、使露天的炼药锅缓慢地装满水、使附有激流魔咒的三叉戟可以在陆地上使用等效果。
-
-降雨粒子碰到一个方块时会发出声音，这种声音在16格内的任何地方都能够被听见。虽然降雨粒子只能在10格内被看见，它的效果却发生在所有已加载的区域里。
-
-图为降雨。" />
-<Image Height="250" HorizontalAlignment="Center" Source="https://zh.minecraft.wiki/images/Rain.png?a682e" />
+图为一只绵羊在黏液块上弹跳。" />
+<Image Height="250" HorizontalAlignment="Center" Source="https://zh.minecraft.wiki/images/Sheep_jumping_on_slime_blocks.png?a46c3" />
   <TextBlock TextWrapping="Wrap" Margin="0,0,0,10" Foreground="#000000" FontSize="15"
                     Text="     " />
  <local:MyListItem  Margin="-5,2,-5,8"
-		            Logo="https://zh.minecraft.wiki/favicon.ico" Title="打开降雨介绍页面" Info="点我打开" 
-		            EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%99%8D%E9%9B%A8" Type="Clickable" />
+		            Logo="https://zh.minecraft.wiki/favicon.ico" Title="打开粘液块介绍页面" Info="点我打开" 
+		            EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%BB%8F%E6%B6%B2%E5%9D%97" Type="Clickable" />
 
 
 
