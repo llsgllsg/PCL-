@@ -84,8 +84,8 @@
                     Text="请看" EventType="弹出窗口" EventData="必看|如果图片出现错误请汇报作者，邮箱：llsgllsg@outlook\n来打扰的一律拉黑" />
 
 <local:MyListItem Margin="-5,2,-5,8"
-                    Logo="pack://application:,,,/images/Blocks/Grass.png"
-		            EventType="打开帮助" EventData="帮助/自定义帮助.json" Type="Clickable" />
+                    Logo="https://zh.minecraft.wiki/favicon.ico"
+		            EventType="打开帮助" EventData="https://news.bugjump.net/News.json" Type="Clickable" />
           <Calendar HorizontalAlignment="Center" Margin="0,12,0,10" Grid.Column="0"/>
           <TextBlock Margin="5,0,5,12" TextWrapping="Wrap" HorizontalAlignment="Center" Foreground="{DynamicResource ColorBrush1}" Text="{cave}" />
           <local:MyButton Margin="0,-10,-5,0" Width="15" Height="15" HorizontalAlignment="Right" ToolTip="点击我刷新哦" EventType="刷新主页" EventData="回声洞">
