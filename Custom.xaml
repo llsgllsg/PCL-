@@ -20,59 +20,10 @@
 </local:MyCard>
 -->
 
-<local:MyCard Title="Minecraft Wiki迁移啦" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
-    <StackPanel Margin="25,40,23,15">
-        <TextBlock TextWrapping="Wrap" Margin="125,0,0,10" Foreground="#EAC100"
-                    Text="选择你想要的点一点" />
-
- <local:MyListItem  Margin="-5,2,-5,8"
-		            Logo="https://zh.minecraft.wiki/favicon.ico" Title="新Wiki入口" Info="点我打开新Wiki" 
-		            EventType="打开网页" EventData="https://zh.minecraft.wiki/w/Minecraft_Wiki" Type="Clickable" />
- <local:MyListItem  Margin="-5,2,-5,8"
-		            Logo="https://zh.minecraft.wiki/favicon.ico" Title="查看原文" Info="点我打开以下文本原文" 
-		            EventType="打开网页" EventData="https://zh.minecraft.wiki/w/Minecraft_Wiki:%E8%BF%81%E7%A7%BB%E9%80%9A%E7%9F%A5" Type="Clickable" />
-
-<Image Height="200" HorizontalAlignment="Center" Source="https://zh.minecraft.wiki/images/Forking_from_Fandom_poster.png?68357" />
-<TextBlock TextWrapping="Wrap" Margin="0,0,0,10" Foreground="#000000" FontSize="15"
-                    Text="    " />
-<TextBlock TextWrapping="Wrap" Margin="0,0,0,10" Foreground="#000000" FontSize="15"
-                    Text="更快的加载速度" />
-<TextBlock TextWrapping="Wrap" Margin="0,0,0,10" Foreground="#000000" FontSize="12"
-                    Text="对于中国大陆用户，新站的加载速度有!!!明显改善!!!这是因为新wiki的界面更加简洁，无需加载无关资源，也不会加载乱七八糟的追踪脚本。" />
-<TextBlock TextWrapping="Wrap" Margin="0,0,0,10" Foreground="#000000" FontSize="15"
-                    Text="更少的广告" />
-<TextBlock TextWrapping="Wrap" Margin="0,0,0,10" Foreground="#000000" FontSize="12"
-                    Text="新网站不再会有弹窗、问卷、无关文章或是视频广告。每个页面最多只会展示1条广告。
-当前，由于我们还在完善广告基建，页面上暂时还不会显示广告。开始显示广告后，我们会确保再次发布通知，并在广告的位置与选择上做到公开透明。" />
-<TextBlock TextWrapping="Wrap" Margin="0,0,0,10" Foreground="#000000" FontSize="15"
-                    Text="新皮肤" />
-<TextBlock TextWrapping="Wrap" Margin="0,0,0,10" Foreground="#000000" FontSize="12"
-                    Text="你是否也曾因Fandom那丑陋的黄色侧边栏而困扰？这次，我们为wiki设计了一套熟悉却又不失新潮的外观。除此之外，新的wiki还有深色模式（在网页的右上角启用）和固定宽度（目前只有已登录用户可以开启，位于参数设置的“小工具”中）的选项。我们还更换了全新的Logo！" />
-<TextBlock TextWrapping="Wrap" Margin="0,0,0,10" Foreground="#000000" FontSize="15"
-                    Text="更完善的搜索功能" />
-<TextBlock TextWrapping="Wrap" Margin="0,0,0,10" Foreground="#000000" FontSize="12"
-                    Text="或许你曾注意到，Fandom的搜索结果常常与你的需求不符。现在，新站的搜索引擎更强大、更准确。比如，你可以试着搜索“盔甲纹饰 快照”找到盔甲纹饰是在Java版的哪一个快照中加入的。在Fandom wiki上，你大概率无法用搜索找到这个信息。" />
-<TextBlock TextWrapping="Wrap" Margin="0,0,0,10" Foreground="#000000" FontSize="15"
-                    Text="没有年龄弹窗" />
-<TextBlock TextWrapping="Wrap" Margin="0,0,0,10" Foreground="#000000" FontSize="12"
-                    Text="与Fandom不同，我们不会强制你告诉我们你是否已经成年。" />
-         <TextBlock TextWrapping="Wrap" Margin="0,0,0,10" Foreground="#000000" FontSize="15"
-                    Text="匿名编辑回归" />
-<TextBlock TextWrapping="Wrap" Margin="0,0,0,10" Foreground="#000000" FontSize="12"
-                    Text="你不再需要创建账号就能编辑wiki了。" />
-    </StackPanel>
-</local:MyCard>
-
-
-
-
-<TextBlock TextWrapping="Wrap" Margin="150,0,0,10" Foreground="#114eac" FontSize="15"
-                    Text="---建议查看以上内容---" />
-
 <local:MyCard Margin="0,0,0,12" Title="欢迎页" CanSwap="True" IsSwaped="False">
      <StackPanel Margin="24,40,24,15">
           <TextBlock HorizontalAlignment="Center" Margin="0,0,0,12" Foreground="{DynamicResource ColorBrush2}" FontSize="20"
-               Text="欢迎使用乱七八糟!" />
+               Text="欢迎使用1.18.2养老服主页!" />
           <local:MyHint Text="主页作者: zqwj" Margin="0,0,0,0" Padding="0,2,0,2" IsWarn="False" />
         <TextBlock TextWrapping="Wrap" Margin="150,0,0,4"
                     Text="         " />	        
@@ -85,7 +36,7 @@
 
 <local:MyListItem Margin="-5,2,-5,8"
                     Logo="https://zh.minecraft.wiki/favicon.ico"
-		            EventType="打开帮助" EventData="https://news.bugjump.net/News.json" Type="Clickable" />
+		            EventType="打开新闻主页" EventData="https://news.bugjump.net/News.json" Type="Clickable" />
           <Calendar HorizontalAlignment="Center" Margin="0,12,0,10" Grid.Column="0"/>
           <TextBlock Margin="5,0,5,12" TextWrapping="Wrap" HorizontalAlignment="Center" Foreground="{DynamicResource ColorBrush1}" Text="{cave}" />
           <local:MyButton Margin="0,-10,-5,0" Width="15" Height="15" HorizontalAlignment="Right" ToolTip="点击我刷新哦" EventType="刷新主页" EventData="回声洞">
@@ -103,21 +54,26 @@
     <StackPanel Margin="25,40,23,15">
         <TextBlock TextWrapping="Wrap" Margin="0,0,0,10" Foreground="#000000" FontSize="15"
                     Text="
-黏液块是一种允许部分实体在其上弹跳的透明方块。
+合成器是一种在接收到红石信号时自动合成并丢出产物的方块。
 
-黏液块能使掉落在其上的部分实体弹跳，上升的最大高度与该个体的速度相关。除非玩家正在潜行，否则落在黏液块上不会造成摔落伤害。如果玩家落在黏液块上面时按住跳跃键，无论速度大小，接触黏液块后仅会进行一次普通的跳跃。
+合成器可以用5个铁锭、1个工作台、2个红石粉和1个投掷器合成。
 
-当被活塞推动时，被黏液块触碰到的实体（物品展示框[仅Java版]、末影龙和画除外）会向着被推动的方向弹射出去。如果实体是位于移动的黏液块之上的话，则会落入或穿过它，除非它正被向上推。
+合成器拥有3×3的合成方格，允许多名玩家同时操作。合成方格的每个槽位都可以被单独禁用，空手单击槽位可禁用该槽位，再次点击可取消禁用。
 
-当黏液块被活塞推动或拉动时，它会尝试带着所有相邻的方块朝自身移动的方向移动。可以被它移动的方块种类与能被黏性活塞拉回的方块相同，无法被拉回的方块会留在原位。被移动的方块也会尝试移动相邻的方块，而不单是在活塞前面的方块。
+依照合成配方在合成器的合成方格内摆放物品时，右边的输出槽会显示产物，但不能像工作台一样直接取走产物。
 
+漏斗、投掷器和其他合成器可以与合成器的任何一面互动，将物品转入合成器的未禁用槽位。漏斗和漏斗矿车可以从合成器中取出物品。
+
+被激活后，合成器会消耗合成方格中的材料合成一份产物，同时将产物从正面掷出。如果合成器的前方存在容器（包括另一个合成器），且容器的槽位允许接收该产物，那么产物会直接存入容器。
+
+图为Minecraft Live 2023展示的合成器。
 图为一只绵羊在黏液块上弹跳。" />
-<Image Height="250" HorizontalAlignment="Center" Source="https://zh.minecraft.wiki/images/Sheep_jumping_on_slime_blocks.png?a46c3" />
+<Image Height="250" HorizontalAlignment="Center" Source="https://zh.minecraft.wiki/w/File:MCLive_Crafter.png" />
   <TextBlock TextWrapping="Wrap" Margin="0,0,0,10" Foreground="#000000" FontSize="15"
                     Text="     " />
  <local:MyListItem  Margin="-5,2,-5,8"
-		            Logo="https://zh.minecraft.wiki/favicon.ico" Title="打开粘液块介绍页面" Info="点我打开" 
-		            EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%BB%8F%E6%B6%B2%E5%9D%97" Type="Clickable" />
+		            Logo="https://zh.minecraft.wiki/favicon.ico" Title="打开合成器介绍页面" Info="点我打开" 
+		            EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%90%88%E6%88%90%E5%99%A8" Type="Clickable" />
 
 
 
@@ -160,20 +116,14 @@
 
 
         <local:MyHint Text="连接稳定的网络了没?" />
-        <local:MyHint Margin="0,8,0,2" IsWarn="False"
-                    Text="记得看看加速ip哪个线路速度快哦，不仅只看人数，推荐使用镇江线，如果挂了加速器请使用hypixel.net进入，下面提供启动按钮" />
+
 
 <TextBlock TextWrapping="Wrap" Margin="135,0,0,4"
                     Text="      "/>
 
  <local:MyButton Margin="0,4,0,0" Width="270" Height="35"
-                    Text="启动 1.8.9 并进入 Hypixel（hyp原本ip）" EventType="启动游戏" EventData="1.8.9|mc.hypixel.net" ToolTip="开加速器了吗" />
+                    Text="启动 游戏 并进入 服务器（版本名称请改成1.18.2，否则没法启动）" EventType="启动游戏" EventData="1.18.2| frp-any.top:25562" ToolTip="改版本名称了吗" />
 
- <local:MyButton Margin="0,4,0,0" Width="250" Height="35"
-                    Text="启动 1.8.9 并进入 Hypixel（镇江线）" EventType="启动游戏" EventData="1.8.9|hypixel.cc" ToolTip="服务器 IP：hypixel.cc" />
-
- <local:MyButton Margin="0,4,0,0" Width="250" Height="35"
-                    Text="启动 1.8.9 并进入 Hypixel（迁宿线）" EventType="启动游戏" EventData="1.12.2|mc.hypixel.net.cn" ToolTip="服务器 IP：mc.hypixel.net.cn" />
 
 
     </StackPanel>
@@ -190,7 +140,7 @@
         <TextBlock TextWrapping="Wrap" Margin="125,0,0,10" Foreground="#EAC100"
                     Text="选择你想要的点一点" />
          <local:MyListItem  Margin="-5,2,-5,8"
-		            Logo="https://static.mcbbs.net/template/mcbbs/image/logo_sc.png" Title="打开 MCBBS" Info="MCBBS一下，你就知道！" 
+		            Logo="https://static.mcbbs.net/template/mcbbs/image/logo_sc.png" Title="打开 服务器官网" Info="官网一下，你就知道！" 
 		            EventType="打开网页" EventData="https://www.mcbbs.net/" Type="Clickable" />
 
 
