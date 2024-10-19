@@ -1,237 +1,159 @@
-﻿<!-- 这是注释 -->
-
-<!-- 卡片（local:MyCard）的 Title 属性决定了它的标题。&#xA;为卡片添加 CanSwap 属性让它可以被折叠，True 代表是，False 代表否。在此基础上，再使用 IsSwaped 属性调整它是否默认被折叠。" /> -->
 
 
-<!-- <local:MyCard Title="列表项 1：基础" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
-    <StackPanel Margin="25,40,23,15">
-        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
-                    Text="你也可以使用列表项 “local:MyListItem” 来替代按钮，其使用方式与按钮类似。" />
-        <local:MyListItem  Margin="-5,2,-5,8"
-		            Logo="https://www.baidu.com/favicon.ico" Title="百度" Info="百度一下，你就知道！" 
-		            EventType="打开网页" EventData="https://www.baidu.com/" Type="Clickable" />
-        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
-                    Text="Logo 属性为列表项的图标，指定的可以是链接也可以是文件路径；Title 是大标题，Info 是可选的小标题（详细信息）；Type 如果省略，该列表项则单纯只展示信息，仅当 Type 为 Clickable 才能触发点击效果。"/>
-        <local:MyListItem Margin="-5,2,-5,8"
-                    Logo="pack://application:,,,/images/Blocks/Grass.png"
-		            EventType="打开帮助" EventData="帮助/自定义帮助.json" Type="Clickable" />
-
-    </StackPanel>
-</local:MyCard>
--->
-
-<local:MyCard Margin="0,0,0,12" Title="欢迎页" CanSwap="True" IsSwaped="False">
-     <StackPanel Margin="24,40,24,15">
-          <TextBlock HorizontalAlignment="Center" Margin="0,0,0,12" Foreground="{DynamicResource ColorBrush2}" FontSize="20"
-               Text="欢迎使用Grilled Fish page" />
-          <local:MyHint Text="主页作者: zqwj" Margin="0,0,0,0" Padding="0,2,0,2" IsWarn="False" />
- Text="作者网站" EventType="打开网页" Grid.Column="0"
-                    EventData="https://llsgllsg.rth1.xyz/"
-                    LogoScale="0.8" ColorType="Highlight"
-                    Logo="M13.5,4A1.5,1.5 0 0,0 12,5.5A1.5,1.5 0 0,0 13.5,7A1.5,1.5 0 0,0 15,5.5A1.5,1.5 0 0,0 13.5,4M13.14,8.77C11.95,8.87 8.7,11.46 8.7,11.46C8.5,11.61 8.56,11.6 8.72,11.88C8.88,12.15 8.86,12.17 9.05,12.04C9.25,11.91 9.58,11.7 10.13,11.36C12.25,10 10.47,13.14 9.56,18.43C9.2,21.05 11.56,19.7 12.17,19.3C12.77,18.91 14.38,17.8 14.54,17.69C14.76,17.54 14.6,17.42 14.43,17.17C14.31,17 14.19,17.12 14.19,17.12C13.54,17.55 12.35,18.45 12.19,17.88C12,17.31 13.22,13.4 13.89,10.71C14,10.07 14.3,8.67 13.14,8.77Z" />
-<local:MyButton Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
-                    Text="特别感谢" EventType="弹出窗口" EventData="特别感谢|感谢MFn233制作的日历" />
-
- <local:MyIconTextButton Margin="0,5,0,6" Height="35" HorizontalAlignment="Center"
-                   
-
-          <TextBlock Margin="5,0,5,12" TextWrapping="Wrap" HorizontalAlignment="Center" Foreground="{DynamicResource ColorBrush1}" Text="{cave}" />
-          <local:MyButton Margin="0,-10,-5,0" Width="15" Height="15" HorizontalAlignment="Right" ToolTip="点击我刷新哦" EventType="刷新主页" EventData="回声洞">
-               <Path Fill="{DynamicResource ColorBrush5}" Stretch="Fill" Width="15" Height="15">
-                    <Path.Data>
-                         <PathGeometry FillRule="Nonzero" Figures="M256.455,8C322.724,8.119,382.892,34.233,427.314,76.685L463.029,40.97C478.149,25.851,504,36.559,504,57.941L504,192C504,205.255,493.255,216,480,216L345.941,216C324.559,216,313.851,190.149,328.97,175.029L370.72,133.279C339.856,104.38 299.919,88.372 257.49,88.006 165.092,87.208 87.207,161.983 88.0059999999999,257.448 88.764,348.009 162.184,424 256,424 297.127,424 335.997,409.322 366.629,382.444 371.372,378.283 378.535,378.536 382.997,382.997L422.659,422.659C427.531,427.531 427.29,435.474 422.177,440.092 378.202,479.813 319.926,504 256,504 119.034,504 8.001,392.967 8,256.002 7.999,119.193 119.646,7.755 256.455,8z"/>
-                    </Path.Data>
-               </Path>
-          </local:MyButton>
+<!--欢迎页-->
+<local:MyCard Margin="0,-6,0,12" Title="欢迎"> <!--下面不是卡片，所以不用0,0,0,12-->
+     <StackPanel Margin="24,35,24,15">
+          <TextBlock HorizontalAlignment="Center" Margin="0,0,0,0"
+               Foreground="{DynamicResource ColorBrush2}" FontSize="20"
+               Text="欢迎使用Grilled Fish page!" />
+          <Calendar HorizontalAlignment="Center" Margin="0,12,0,10" />
+          <TextBlock Margin="5,0,5,12" TextWrapping="Wrap" HorizontalAlignment="Center"
+               Foreground="{DynamicResource ColorBrush1}" Text="{cave}" />
      </StackPanel>
 </local:MyCard>
 
 
-<local:MyCard Title="Wiki本周页面" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
-    <StackPanel Margin="25,40,23,15">
-        <TextBlock TextWrapping="Wrap" Margin="0,0,0,10" Foreground="#000000" FontSize="15"
-                    Text="
-合成器是一种在接收到红石信号时自动合成并丢出产物的方块。
-
-合成器可以用5个铁锭、1个工作台、2个红石粉和1个投掷器合成。
-
-合成器拥有3×3的合成方格，允许多名玩家同时操作。合成方格的每个槽位都可以被单独禁用，空手单击槽位可禁用该槽位，再次点击可取消禁用。
-
-依照合成配方在合成器的合成方格内摆放物品时，右边的输出槽会显示产物，但不能像工作台一样直接取走产物。
-
-漏斗、投掷器和其他合成器可以与合成器的任何一面互动，将物品转入合成器的未禁用槽位。漏斗和漏斗矿车可以从合成器中取出物品。
-
-被激活后，合成器会消耗合成方格中的材料合成一份产物，同时将产物从正面掷出。如果合成器的前方存在容器（包括另一个合成器），且容器的槽位允许接收该产物，那么产物会直接存入容器。
-
-图为Minecraft Live 2023展示的合成器。
-图为一只绵羊在黏液块上弹跳。" />
-<Image Height="250" HorizontalAlignment="Center" Source="https://zh.minecraft.wiki/w/File:MCLive_Crafter.png" />
-  <TextBlock TextWrapping="Wrap" Margin="0,0,0,10" Foreground="#000000" FontSize="15"
-                    Text="     " />
- <local:MyListItem  Margin="-5,2,-5,8"
-		            Logo="https://zh.minecraft.wiki/favicon.ico" Title="打开合成器介绍页面" Info="点我打开" 
-		            EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%90%88%E6%88%90%E5%99%A8" Type="Clickable" />
-
-
-
-    </StackPanel>
-</local:MyCard>
-<local:MyCard Margin="0,0,0,12" Title="下崽器" CanSwap="True" IsSwaped="True">
-    <StackPanel Margin="24,40,24,15">
-        <local:MyHint Margin="0,0,0,10" IsWarn="True" Text="链接必须为直链——https或者http开头，部分网址可能无法下载，如百度网盘" />
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="1*" />
-                <ColumnDefinition Width="3*" />
-                <ColumnDefinition Width="1*" />
-            </Grid.ColumnDefinitions>
-            <TextBlock Margin="0,7,0,0" Text="下载链接：" Grid.Column="0" FontSize="13"/>
-            <local:MyTextBox Margin="-5,0,0,0" Name="web" Height="30" Grid.Column="1"/>
-            <local:MyButton EventType="下载文件" EventData="{Binding ElementName=web,Path=Text}" Text="开始下载" Margin="5,0,0,0" Height="30" Grid.Column="2" Padding="2,0,2,0" ColorType="Highlight"/>
-        </Grid>
-    </StackPanel>  
-</local:MyCard>
-
-<local:MyCard Title="启动 H ! Y ! P ! I ! X ! E ! L !" Margin="0,0,0,15" CanSwap="true" IsSwaped="true">
-    <StackPanel Margin="30,40,23,15">
-        <TextBlock TextWrapping="Wrap" Margin="100,5,20,0" Foreground="#EAC100" FontSize="13"
-                    Text="去下面的卡片清理一下垃圾吧！" />
-
-
-<TextBlock TextWrapping="Wrap" Margin="135,0,0,4"
-                    Text="建议先清理垃圾再玩"/>
-        <local:MyListItem Margin="-5,0,-5,8"
-            Logo="pack://application:,,,/images/Blocks/CommandBlock.png"
-            Title="清理垃圾" Info="一键清理MC垃圾和PCL2缓存" EventType="清理垃圾" Type="Clickable" />
-
-
-<local:MyButton Margin="120,0,10,0" Width="160" Height="35" HorizontalAlignment="Left" Padding="18,0,13,0"
-                        Text="再来内存优化一下吧" EventType="内存优化" />
-
-<TextBlock TextWrapping="Wrap" Margin="135,0,0,4"
-                    Text="         "/>
-
-
-        <local:MyHint Text="连接稳定的网络了没?" />
-
-
-<TextBlock TextWrapping="Wrap" Margin="135,0,0,4"
-                    Text="      "/>
-
- <local:MyButton Margin="0,4,0,0" Width="270" Height="35"
-                    Text="启动 游戏 并进入 服务器（版本名称请改成1.18.2，否则没法启动）" EventType="启动游戏" EventData="1.18.2| frp-any.top:25562" ToolTip="改版本名称了吗" />
-
-
-
-    </StackPanel>
-
-
-
-</local:MyCard>
-
-
-
-
-<local:MyCard Title="实用网站快速入口" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
-    <StackPanel Margin="25,40,23,15">
-        <TextBlock TextWrapping="Wrap" Margin="125,0,0,10" Foreground="#EAC100"
-                    Text="选择你想要的点一点" />
-         <local:MyListItem  Margin="-5,2,-5,8"
-		            Logo="https://static.mcbbs.net/template/mcbbs/image/logo_sc.png" Title="打开 服务器官网" Info="官网一下，你就知道！" 
-		            EventType="打开网页" EventData="https://www.mcbbs.net/" Type="Clickable" />
-
-
- <local:MyListItem  Margin="-5,2,-5,8"
-		            Logo="https://www.mcmod.cn/images/logo.gif" Title="打开MC百科" Info="MC百科一下，你就知道！" 
-		            EventType="打开网页" EventData="https://www.mcmod.cn/" Type="Clickable" />
-
-
- <local:MyListItem  Margin="-5,2,-5,8"
-		            Logo="https://zh.minecraft.wiki/favicon.ico" Title="打开MC Wiki" Info="Wiki一下，你就知道！" 
-		            EventType="打开网页" EventData="https://zh.minecraft.wiki/w/Minecraft_Wiki" Type="Clickable" />
-         
-        <TextBlock TextWrapping="Wrap" Margin="0,10,0,10"
-                    Text="                ——我只是一条线————我只是一条线——" />
-        <local:MyTextButton Margin="0,8,0,0" HorizontalAlignment="Center"
-                    Text="点我—康康MC官网有啥好康的—点我" EventType="打开网页" EventData="https://minecraft.net/" />
-    </StackPanel>
-</local:MyCard>
-<local:MyCard Margin="0,0,0,12" Title="杂项" CanSwap="True" IsSwaped="True">
-     <StackPanel Margin="24,40,24,15">
+<local:MyCard Margin="0,0,0,8">
+     <StackPanel Margin="24,6,24,12">
           <Grid>
                <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="1*" />
                     <ColumnDefinition Width="1*" />
                </Grid.ColumnDefinitions>
-               <local:MyButton Grid.Column="0" Margin="0,0,10,0" Height="35" Text="今日人品" EventType="今日人品"/>
+               <local:MyIconTextButton Margin="0,5,0,6" Height="35" HorizontalAlignment="Center"
+                    Text="作者网站" EventType="打开网页" Grid.Column="0"
+                    EventData="https://llsgllsg.rth1.xyz"
+                    LogoScale="0.8" ColorType="Highlight"
+                    Logo="M13.5,4A1.5,1.5 0 0,0 12,5.5A1.5,1.5 0 0,0 13.5,7A1.5,1.5 0 0,0 15,5.5A1.5,1.5 0 0,0 13.5,4M13.14,8.77C11.95,8.87 8.7,11.46 8.7,11.46C8.5,11.61 8.56,11.6 8.72,11.88C8.88,12.15 8.86,12.17 9.05,12.04C9.25,11.91 9.58,11.7 10.13,11.36C12.25,10 10.47,13.14 9.56,18.43C9.2,21.05 11.56,19.7 12.17,19.3C12.77,18.91 14.38,17.8 14.54,17.69C14.76,17.54 14.6,17.42 14.43,17.17C14.31,17 14.19,17.12 14.19,17.12C13.54,17.55 12.35,18.45 12.19,17.88C12,17.31 13.22,13.4 13.89,10.71C14,10.07 14.3,8.67 13.14,8.77Z" />
+               <local:MyIconTextButton Margin="0,5,0,6" Height="35" HorizontalAlignment="Center"
+                    Text="刷新主页" EventType="刷新主页" Grid.Column="1"
+                    LogoScale="0.8" ColorType="Highlight"
+                    Logo="M256.455,8C322.724,8.119,382.892,34.233,427.314,76.685L463.029,40.97C478.149,25.851,504,36.559,504,57.941L504,192C504,205.255,493.255,216,480,216L345.941,216C324.559,216,313.851,190.149,328.97,175.029L370.72,133.279C339.856,104.38 299.919,88.372 257.49,88.006 165.092,87.208 87.207,161.983 88.0059999999999,257.448 88.764,348.009 162.184,424 256,424 297.127,424 335.997,409.322 366.629,382.444 371.372,378.283 378.535,378.536 382.997,382.997L422.659,422.659C427.531,427.531 427.29,435.474 422.177,440.092 378.202,479.813 319.926,504 256,504 119.034,504 8.001,392.967 8,256.002 7.999,119.193 119.646,7.755 256.455,8z" />
+          </Grid>
+          <local:MyListItem Margin="-2,0,0,0"
+               Logo="pack://application:,,,/images/blocks/GoldBlock.png" Title="今日人品"
+               Info="试试手气！" EventType="今日人品" Type="Clickable" />
+          <local:MyListItem Margin="-2,0,0,0"
+               Logo="pack://application:,,,/images/blocks/Grass.png" Title="启动基岩版"
+               Info="以 URL Scheme 的方式启动电脑上的 MC 基岩版。" EventType="打开网页" EventData="minecraft://"
+               Type="Clickable" />
+          <local:MyListItem Margin="-2,0,0,0"
+               Logo="pack://application:,,,/images/blocks/CommandBlock.png" Title="网页捷径"
+               Type="Clickable"
+               Info="打开网页捷径页面" EventType="打开帮助"
+               EventData="https://cn-sy1.rains3.com/123456/main.json" />
+     </StackPanel>
+</local:MyCard>
 
-               <local:MyButton Grid.Column="1" Margin="0,0,0,0" Text="启动Minecraft基岩版" EventType="打开网页" EventData="minecraft://" ToolTip="如果你的电脑上安装了Minecraft基岩版，按下这个按钮将会启动它。这样PCL2就赶上官启了！" />
-
+<!--工具-->
+<Grid Margin="0,0,0,8">
+     <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="1*" />
+          <ColumnDefinition Width="80" />
+          <ColumnDefinition Width="1*" />
+     </Grid.ColumnDefinitions>
+     <Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush3}" StrokeThickness="1.5"
+          Stretch="Fill" Grid.Column="0" />
+     <TextBlock Text="工具" FontSize="15" Foreground="{DynamicResource ColorBrush4}" Grid.Column="1"
+          VerticalAlignment="Center" HorizontalAlignment="Center" />
+     <Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush3}" StrokeThickness="1.5"
+          Stretch="Fill" Grid.Column="2" />
+</Grid>
+<local:MyCard Margin="0,0,0,12" Title="启动器工具" CanSwap="True" IsSwaped="True">
+     <StackPanel Margin="24,40,24,15">
+          <local:MyHint IsWarn="False" Text="此处所有功能均为启动器自带，出问题请上报至 PCL2 仓库" Margin="0,0,0,10" />
+          <Grid>
+               <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+               </Grid.ColumnDefinitions>
+               <local:MyButton Grid.Column="0" Margin="0,0,10,0" Height="35" Text="打开 PCL 日志"
+                    EventType="打开文件" EventData="Log1.txt" ToolTip="查看当前PCL启动器的日志文件。" />
+               <local:MyButton Grid.Column="1" Margin="0,0,0,0" Height="35" Text="清理垃圾"
+                    EventType="清理垃圾" ToolTip="清理垃圾文件。" />
+          </Grid>
+          <Grid>
+               <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+               </Grid.ColumnDefinitions>
+               <local:MyButton Grid.Column="0" Margin="0,10,10,0" Height="35" Text="内存优化"
+                    EventType="内存优化" ToolTip="将物理内存占用降低约 1/3 ，不仅限于 MC ！&#xA;如果使用机械硬盘，这可能会导致亿小段时间的严重卡顿。" />
+               <local:MyButton Grid.Column="1" Margin="0,10,0,0" Height="35" Text="定位游戏启动脚本"
+                    EventType="打开文件" EventData="explorer.exe|/select,LatestLaunch.bat"
+                    ToolTip="打开PCL上一次启动 MC 的脚本 (LatestLaunch.bat) 。（不建议使用此脚本启动游戏，如果需要使用此脚本启动，请把脚本内所有java.exe换成javaw.exe" />
+          </Grid>
+     </StackPanel>
+</local:MyCard>
+<local:MyCard Margin="0,0,0,8" Title="下崽器" CanSwap="True" IsSwaped="True">
+     <StackPanel Margin="24,40,24,15">
+          <local:MyHint Margin="0,0,0,10" IsWarn="False"
+               Text="使用 PCL 的高速多线程下载引擎下载任意文件。请注意，部分网站 (例如百度网盘) 可能会报错 (403) 已禁止，无法正常下载。" />
+          <local:MyHint Margin="0,0,0,10" IsWarn="True"
+               Text="链接必须为以 http:// 或 https:// 开头的网址，部分网址可能无法下载（人话：直链）" />
+          <Grid>
+               <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*" />
+                    <ColumnDefinition Width="1*" />
+               </Grid.ColumnDefinitions>
+               <local:MyTextBox HintText="下载链接：" Margin="0,0,0,0" Name="web" Height="30"
+                    Grid.Column="0" ToolTip="在此输入下载链接，点击右边按钮下载自定义文件。&#xA;注意不要按下Enter键，这会直接启动游戏。" />
+               <local:MyButton EventType="下载文件" EventData="{Binding ElementName=web,Path=Text}"
+                    Text="开始下载→" Margin="5,0,0,0" Height="30" Grid.Column="2" Padding="2,0,2,0"
+                    ColorType="Highlight" />
           </Grid>
      </StackPanel>
 </local:MyCard>
 
-<local:MyCard Title="有灵感？打开一点系统工具" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
-    <StackPanel Margin="25,40,23,15">
-        <local:MyButton Margin="0,4,0,8" Width="200" Height="35"
-                    Text="打开记事本" EventType="打开文件" EventData="notepad.exe" />
-        <local:MyButton Margin="0,4,0,8" Width="200" Height="35"
-                    Text="打开CMD，去调戏系统（doge" EventType="打开文件" EventData="cmd.exe" />
-    </StackPanel>
+<!--其它-->
+<Grid Margin="0,0,0,8">
+     <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="1*" />
+          <ColumnDefinition Width="80" />
+          <ColumnDefinition Width="1*" />
+     </Grid.ColumnDefinitions>
+     <Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush3}" StrokeThickness="1.5"
+          Stretch="Fill" Grid.Column="0" />
+     <TextBlock Text="其它" FontSize="15" Foreground="{DynamicResource ColorBrush4}" Grid.Column="1"
+          VerticalAlignment="Center" HorizontalAlignment="Center" />
+     <Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush3}" StrokeThickness="1.5"
+          Stretch="Fill" Grid.Column="2" />
+</Grid>
+<local:MyCard Margin="0,0,0,12" Title="友情链接" CanSwap="True" IsSwaped="True">
+     <StackPanel Margin="24,40,24,15">
+          <local:MyListItem Margin="-2,0,0,0"
+               Logo="pack://application:,,,/images/blocks/Grass.png" Title="新闻页面"
+               Info="作者：最亮的信标" EventType="打开帮助" EventData="https://news.bugjump.net/News.json"
+               Type="Clickable" />
+          <local:MyListItem Margin="-2,0,0,0"
+               Logo="pack://application:,,,/images/blocks/Grass.png" Title="主页市场"
+               Info="作者：MFn233" EventType="打开帮助"
+               EventData="https://mfn233.github.io/PCL-Mainpage-Market/market.json"
+               Type="Clickable" />
+     </StackPanel>
 </local:MyCard>
-
-
-
-<!-- 
-
-全部通用的属性：
- - Width、Height：设置宽度与高度
- - ToolTip：设置鼠标指向时的提示文本
- - Background：调整背景颜色（十六进制字符串，例如 #FF010203 代表 ARGB 中的 255,1,2,3。前两位代表不透明度，FF 为全不透明，00 为全透明）
- - Margin：调整外边距（格式为 左,上,右,下。例如 Margin="0,0,0,2" 即为 2 单位的下边距）
-
-TextBlock（纯文本）：
- - Text：设置显示的文本（如果要使用引号等特殊字符，自行百度 XAML 转义）
- - TextWrapping：开启自动换行
- - FontSize：设置字号
- - FontWeight：设置为 Bold 时，文字加粗
- - Foreground：调整前景颜色（十六进制字符串，例如 #FF010203 代表 ARGB 中的 255,1,2,3。前两位代表不透明度，FF 为全不透明，00 为全透明）
- - HorizontalAlignment：设置对齐方式（Left、Center、Right）
-
-Image（图片）：
- - Source：要显示的图片的网址
- - Foreground：调整前景颜色（十六进制字符串，例如 #FF010203 代表 ARGB 中的 255,1,2,3。前两位代表不透明度，FF 为全不透明，00 为全透明）
- - HorizontalAlignment：设置对齐方式（Left、Center、Right）
-
-local:MyCard（卡片）：
- - Title：设置显示的标题文本
- - CanSwap：这张卡片是否可以折叠，True 为是，False 为否
- - IsSwaped：这张卡片是否默认折叠，要求 CanSwap 必须为 True
- - Foreground：调整前景颜色（十六进制字符串，例如 #FF010203 代表 ARGB 中的 255,1,2,3。前两位代表不透明度，FF 为全不透明，00 为全透明）
- - HorizontalAlignment：设置对齐方式（Left、Center、Right）（使用时，CanSwap 属性需为 False）
-
-local:MyHint（提示条）：
- - Text：设置显示的文本（&#xA; 代表换行）
- - IsWarn：设置为 True 代表警告样式，False 代表提示样式
- - HorizontalAlignment：设置对齐方式（Left、Center、Right）
-
-local:MyButton（按钮）：
- - Text：设置显示的文本
- - Padding：设置内边距，格式与 Margin 一致
- - ColorType：设置颜色主题（Highlight 为当前启动器的主题颜色，Red 为红色，默认为黑色）
- - EventType、EventData：触发特定事件
- - HorizontalAlignment：设置对齐方式（Left、Center、Right）
-
-local:MyTextButton（文本按钮）：
- - Text：设置显示的文本
- - EventType、EventData：触发特定事件
- - Foreground：调整前景颜色（十六进制字符串，例如 #FF010203 代表 ARGB 中的 255,1,2,3。前两位代表不透明度，FF 为全不透明，00 为全透明）
- - HorizontalAlignment：设置对齐方式（Left、Center、Right）
-
-local:MyListItem（列表项）：
- - Logo：列表项的图标（所指定的可以是链接也可以是文件路径）
- - Title：列表项的大标题
- - Info：列表项的详细信息，它将会以灰色显示在大标题下方
- - Type：若留空仅单纯展示信息，设置为 Clickable 触发相应活动
-
--->
+<local:MyCard Margin="0,0,0,8" Title="关于" CanSwap="True" IsSwaped="True">
+     <StackPanel Margin="24,40,24,15">
+         <!-- 
+         <local:MyListItem Margin="-2,0,10,0" Info="最新版本的更新日志"
+               Logo="pack://application:,,,/images/blocks/RedstoneLampOn.png" Title="更新日志"
+               EventType="打开网页"
+               EventData="https://github.com/"
+               Type="Clickable" />
+          -->
+          <local:MyListItem Margin="-2,0,10,0" Info="GitHub项目仓库"
+               Logo="pack://application:,,,/images/blocks/CommandBlock.png" Title="项目仓库"
+               EventType="打开网页" EventData="https://github.com/llsgllsg/PCL-"
+               Type="Clickable" />
+          <local:MyListItem Margin="-2,0,0,0" Info="排名不分先后"
+               Logo="pack://application:,,,/images/blocks/GoldBlock.png" Title="鸣谢"
+               EventType="弹出窗口"
+               EventData="鸣谢|感谢以下朋友！此窗口专门用于记录对这个项目有帮助的除作者之外的其他人，括号中注明了他们的来历。\n\n(GitHub\QQ) MFn233感谢他（她）的主页代码和仓库资源，为我完成这个主页提供了巨大帮助\n\n(雨云）感谢雨云的服务器来挂载此主页（虽然是我买的）"
+               Type="Clickable" />
+          <local:MyListItem Margin="-2,0,0,0" Info="llsgllsg"
+               Logo="pack://application:,,,/images/blocks/GoldBlock.png" Title="关于作者"
+               EventType="弹出窗口"
+               EventData="关于作者|我是llsgllsg，啥都会一丢丢的程序员，该主页目部分使用了MFn233的代码，并在GitHub上开源。欢迎你前往仓库为我的项目提issue\n\n如果你真的很希望更多地了解我，欢迎访问我的网站: https://llsgllsg.rth1.xyz/\n\n©llsgllsg 2024"
+               Type="Clickable" />
+     </StackPanel>
+</local:MyCard>
